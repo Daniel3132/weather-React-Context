@@ -14,8 +14,10 @@ This is a weather application built with React that displays the current weather
 * Context API
 * OpenWeatherMap API
 * CSS (SCSS)
-* Getting Started
-* Follow these instructions to get the project up and running on your local machine for development and testing purposes.
+
+
+# Getting Started
+Follow these instructions to get the project up and running on your local machine for development and testing purposes.
 
 
 ## Clone the repository:
