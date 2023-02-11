@@ -1,0 +1,21 @@
+.sun-spinner {
+  margin: 4.5rem auto;
+  width: 5rem;
+  height: 5rem;
+  border: 10px solid orange;
+  background-color: yellow;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    background-color: orange;
+    border-color: orange;
+  }
+}

@@ -1,0 +1,16 @@
+#searchCont{
+    .searchGroup{
+        position: relative;
+        top: 1rem;
+        input{
+            border-right: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button{
+            border: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}

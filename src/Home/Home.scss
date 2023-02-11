@@ -1,0 +1,13 @@
+#home {
+    h1 {
+        font-size: 3rem;
+    }
+    .upperCont{
+        width: 100vw;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.626), rgba(33, 33, 33, 0)), url('../assets/beach-sunset.jpg');
+        background-attachment:scroll;
+        background-size:cover;
+        background-repeat: none;
+        background-position: center;
+    }
+}

@@ -1,0 +1,25 @@
+#alertModal{
+    border: 5px solid rgb(243, 92, 36);
+    width: fit-content;
+    height: fit-content;
+    padding: 3.5rem 3.5rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: rgb(255, 220, 124);
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 3px 3px 0 3px rgba(79, 79, 79, 0.625);
+    button{
+        margin-top: 2.5rem;
+        width: fit-content;
+    }
+    p{
+        text-transform: capitalize;
+    }
+}

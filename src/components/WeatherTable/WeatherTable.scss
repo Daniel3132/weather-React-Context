@@ -1,0 +1,79 @@
+#weatherCont {
+    margin: 5rem auto;
+    width: fit-content;
+    padding-bottom: 1.5rem;
+    width: 80vw;
+    .weatherTableCont {
+        overflow-x: auto;
+        border-bottom: 1px solid orange;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        table{
+            width: 100%;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(34, 34, 34, 0.201);
+        }
+        th {
+            color: black;
+            background-color: orange;
+            border: none;
+            padding: .5rem;
+            border-radius: 3px;
+        }
+        .thTemp {
+            display: flex;
+            flex-direction: row;
+            div{
+                flex-direction: row;
+                justify-content: center;
+                width: 70%;
+                p{
+                    margin: 0 auto;
+                }
+                div {
+                    height: fit-content;
+                    width: fit-content;
+                    flex-direction: row;
+                    small{
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .active{
+                background-color: orangered;
+            }
+        }
+        td {
+            padding: .5rem;
+        }
+        p {
+            text-transform: capitalize;
+        }
+        .stateCont{
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .windSpeed {
+            text-transform: none;
+        }
+        select {
+            margin: 0 .5rem;
+        }
+        .tempSelector {
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 30%;
+        }
+        @media(max-width:800px) {
+            .thTemp{
+                div{
+                    margin: auto .5rem;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
