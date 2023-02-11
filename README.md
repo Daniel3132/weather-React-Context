@@ -16,7 +16,7 @@ This is a weather application built with React that displays the current weather
 * CSS (SCSS)
 
 
-# Getting Started
+## Getting Started
 Follow these instructions to get the project up and running on your local machine for development and testing purposes.
 
 
@@ -42,5 +42,5 @@ Follow these instructions to get the project up and running on your local machin
 * Open your browser and navigate to http://localhost:3000/ to see the app in action.
 
 
-# Contributions
+## Contributions
  This project is open to contributions and bug reports. Feel free to submit a pull request or open an issue.

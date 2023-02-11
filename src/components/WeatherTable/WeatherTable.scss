@@ -66,13 +66,29 @@
             padding: 4px;
             border-radius: 30%;
         }
-        @media(max-width:800px) {
-            .thTemp{
-                div{
+                // Add media query for small screens
+        @media(max-width: 800px) {
+        padding-left: 6rem;
+            .thTemp {
+                div {
                     margin: auto .5rem;
                     flex-direction: column;
                     align-items: center;
                 }
+            }
+            th {
+                font-size: 0.8rem;
+                padding: 0.2rem;
+            }
+            td {
+                font-size: 0.8rem;
+                padding: 0.2rem;
+            }
+            .tempSelector {
+                padding: 2px;
+            }
+            .windSpeed {
+                font-size: 0.7rem;
             }
         }
     }

@@ -7,18 +7,24 @@ import './WeatherTable.scss'
 const Weather = ({ data }) => {
   const { main, weather } = data;
 
+  // Extract the temperature in Kelvin from the data
   const kelvin = main.temp;
+  // Calculate temperature in Celsius
   const celsius = getCelsius(kelvin);
+  // Calculate temperature in Farenheit
   const farenheit = getFaren(kelvin);
 
+  // Call the useTemperatureUnitToggle hook to handle temperature unit toggle and state
   const [unit, state, toggleTemperatureUnit] = useTemperatureUnitToggle({
     kelvin,
     celsius,
     farenheit,
+    // Set the default temperature unit to Celsius
     value: celsius,
     type: 'C'
   });
 
+  
   return (
     <section id='weatherCont'>
       <div className='weatherTableCont'>
@@ -32,13 +38,13 @@ const Weather = ({ data }) => {
                   <p>temperature</p>
                   <div>
                     <small
-                      className={(state.kelvin ? 'active' : '') + ' tempSelector'}
+                      className={`tempSelector ${state.kelvin ? ' active' : ''}`}
                       onClick={() => toggleTemperatureUnit("K")}>°K</small>
                     <small
-                      className={(state.celsius ? 'active' : '') + ' tempSelector'}
+                      className={`tempSelector ${state.celsius ? ' active' : ''}`}
                       onClick={() => toggleTemperatureUnit("C")}>°C</small>
                     <small
-                      className={(state.farenheit ? 'active' : '') + ' tempSelector'}
+                      className={`tempSelector ${state.farenheit ? ' active' : ''}`}
                       onClick={() => toggleTemperatureUnit("F")}>°F</small>
                   </div>
                 </div>

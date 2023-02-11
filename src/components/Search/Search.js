@@ -6,9 +6,12 @@ import './Search.scss'
 const Search = () => {
   const { setCity } = useContext(CityContext);
 
+  // Handle the submit event of the search form
   const submitHandler = e => {
     e.preventDefault();
+    // Get the value of the city input field
     const inputValue = e.target.elements.cityInput.value;
+    // Set the city context state with the input value
     setCity(inputValue);
   };
 
